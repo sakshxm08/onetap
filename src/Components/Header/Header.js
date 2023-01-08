@@ -109,7 +109,7 @@ function Header() {
             user.displayName
           ) : (
             <Link to="/login">
-              <span className="loginLink">Login/Register</span>
+              <span className="loginLinkHeader">Login/Register</span>
             </Link>
           )}
           <hr />

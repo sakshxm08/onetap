@@ -74,7 +74,7 @@ function Posts() {
       {posts && (
         <div className="moreView">
           <div className="heading">
-            <span>Quick Menu</span>
+            <span>QUICK MENU</span>
             <Link to="./viewmore">
               {" "}
               <span>View more</span>{" "}

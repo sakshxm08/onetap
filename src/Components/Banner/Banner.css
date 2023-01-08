@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .bannerParentDiv .bannerChildDiv .menuBar {
   padding: 10px 16px;
   background-color: #141414;
@@ -9,11 +10,11 @@
 }
 
 .bannerCategory {
-  transition: font-weight 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-family: "Montserrat", sans-serif;
 }
 .bannerCategory:hover {
-  font-weight: 700;
-  /* text-decoration: underline; */
+  color: rgb(200, 200, 200);
 }
 .bannerParentDiv .bannerChildDiv .menuBar .categoryMenu span {
   margin-right: 16px;

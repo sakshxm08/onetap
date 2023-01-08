@@ -12,10 +12,10 @@ function Footer() {
           </div>
           <div className="list">
             <ul>
+              <li>New Delhi</li>
               <li>Kolkata</li>
               <li>Mumbai</li>
               <li>Chennai</li>
-              <li>Pune</li>
             </ul>
           </div>
         </div>
@@ -25,16 +25,15 @@ function Footer() {
           </div>
           <div className="list">
             <ul>
-              <li>About OLX Group</li>
+              <li>About OneTap</li>
               <li>Careers</li>
               <li>Contact Us</li>
-              <li>OLXPeople</li>
             </ul>
           </div>
         </div>
         <div>
           <div className="heading">
-            <p>OLX</p>
+            <p>OneTap</p>
           </div>
           <div className="list">
             <ul>
@@ -44,10 +43,6 @@ function Footer() {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <p>Other Countries Pakistan - South Africa - Indonesia</p>
-        <p>Free Classifieds in India. © 2006-2021 OLX</p>
       </div>
     </div>
   );

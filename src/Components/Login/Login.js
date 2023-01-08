@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { Firebase } from "../../firebase/config";
-import Logo from "../../olx-logo.png";
+import Logo from "../../onetap_logo.png";
 import RoundLoading from "../Loading/RoundLoading";
 import "./Login.css";
 
@@ -53,9 +53,15 @@ function Login() {
             />
             <br />
             <br />
-            <button>Login</button>
+            <div className="buttons">
+              <button className="button">Login</button>
+            </div>
+            <div className="signupDiv">
+              <Link to="/signup" className="signupLink">
+                New to OneTap? Create an account
+              </Link>
+            </div>
           </form>
-          <Link to="/signup">Signup</Link>
         </div>
       </div>
     </>

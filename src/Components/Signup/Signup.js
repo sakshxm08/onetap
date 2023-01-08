@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../olx-logo.png";
+import Logo from "../../onetap_logo.png";
+
 import "./Signup.css";
 import { Firebase } from "../../firebase/config";
 import { useHistory } from "react-router";
@@ -84,8 +85,12 @@ export default function Signup() {
             <br />
             <br />
             <button>Signup</button>
+            <div className="loginDiv">
+              <Link to="/login" className="loginLink">
+                Already an user? Login to OneTap
+              </Link>
+            </div>
           </form>
-          <Link to="/login">Login</Link>
         </div>
       </div>
     </>

@@ -13,18 +13,21 @@ function Banner() {
           <div className="otherQuickOptions">
             <span
               className="bannerCategory"
-              onClick={() => setCategory("Auditorium")}
+              onClick={() => setCategory("Auditoriums")}
             >
-              AUDITORIUM
-            </span>
-            <span className="bannerCategory" onClick={() => setCategory("Gym")}>
-              GYM
+              AUDITORIUMS
             </span>
             <span
               className="bannerCategory"
-              onClick={() => setCategory("Swimming Pool")}
+              onClick={() => setCategory("Gyms")}
             >
-              SWIMMING POOL
+              GYMS
+            </span>
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Swimming Pools")}
+            >
+              SWIMMING POOLS
             </span>
             <span
               className="bannerCategory"
