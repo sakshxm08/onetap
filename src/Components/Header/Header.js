@@ -126,7 +126,7 @@ function Header() {
             <SellButton></SellButton>
             <div className="sellMenuContent">
               <SellButtonPlus></SellButtonPlus>
-              <span>SELL</span>
+              <span>BOOK</span>
             </div>
           </div>
         </Link>
