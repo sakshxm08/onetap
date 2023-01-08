@@ -106,7 +106,7 @@ function Header() {
             style={{ color: "white" }}
           ></i>
           {user ? (
-            user.displayName
+            user.displayName.slice(0, user.displayName.indexOf(" "))
           ) : (
             <Link to="/login">
               <span className="loginLinkHeader">Login/Register</span>
