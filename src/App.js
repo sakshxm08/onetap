@@ -5,7 +5,6 @@ import ContextAuth from "./contextStore/AuthContext";
 import ContextPost from "./contextStore/PostContext";
 import MainRoutes from "./Routes/MainRoutes";
 
-import ReactDOM from "react-dom";
 import Favicon from "react-favicon";
 
 function App() {
