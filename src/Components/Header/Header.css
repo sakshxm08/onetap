@@ -1,13 +1,25 @@
 .headerParentDiv {
-  padding: 10px;
-  background-color: whitesmoke;
-  position: fixed;
+  padding: 16px 10px;
+  /* background-color: rgb(81, 180, 180); */
+  background-color: #000;
+  position: sticky;
   width: 100vw;
   z-index: 999;
+  top: 0;
+}
+
+.loginLink {
+  color: white;
+  cursor: pointer;
+  transition: color 0.18s ease-in-out;
+}
+.loginLink:hover {
+  color: rgb(196, 196, 196);
 }
 
 .headerChildDiv {
   width: 100%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,69 +27,29 @@
 
 .placeSearch {
   width: 16em;
-  height: 48px;
+  height: 42px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 0 8px;
-  border: 2px solid #002f34;
-  border-radius: 4px;
-  background-color: white;
-}
-
-.placeSearch ::selection {
-  border-color: #23e5db;
-  outline-color: #23e5db;
+  border-radius: 5px;
+  background-color: #373737;
+  border: 0.5px rgb(182, 182, 182) solid;
 }
 
 .placeSearch input {
-  border-color: transparent;
-  outline-color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
 }
 
 .productSearch {
-  width: 35em;
-  height: 48px;
-  margin-left: 2em;
-  border-radius: 4px;
-  /* border: 2px solid #002f34; */
-  /* display: flex;
-  align-items: center; */
-  /* background-color: white; */
-  /* display: flex;
-  align-items: center; */
-  /* justify-content: space-between; */
+  height: 42px;
+  background-color: #373737;
+  border-radius: 8px;
+  border: 0.5px rgb(182, 182, 182) solid;
 }
-
-/* .productSearch .input {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.productSearch .input input {
-  border-color: transparent;
-  outline-color: transparent;
-  width: 100%;
-  align-items: center;
-}
-
-.productSearch .searchAction {
-  min-width: 48px;
-  height: 48px;
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  background-color: #002f34;
-  border-radius: 0 4px 4px 0;
-}
-
-.productSearch .searchAction svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: white;
-} */
 
 .language {
   height: 48px;
@@ -95,7 +67,6 @@
   margin-right: 5px;
 }
 
-
 .span {
   text-decoration: none;
   font-size: 16px;
@@ -112,8 +83,17 @@
   height: 2px;
 }
 
-.loginPage a{
+.loginPage a {
   text-decoration: none;
+}
+.logout-span {
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.18s ease-in-out;
+  color: black;
+}
+.logout-span:hover {
+  color: #ebeeef;
 }
 
 .sellMenu {
@@ -157,46 +137,50 @@
 
 @media only screen and (max-width: 700px) {
   .placeSearch,
-  .productSearch{
+  .productSearch {
     display: none;
   }
 }
-.logout-span{
-  cursor: pointer;
-}
 
 .dataResult-header {
-    
   position: absolute;
   top: 60px;
-  left: 85px;
-   width: 16em;
-   height: 150px;
-   background-color: white;
-   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-   overflow: hidden;
-   overflow-y: auto;
- }
- 
- /* .dataResult-header::-webkit-scrollbar {
-   display: none;
- } */
- 
- .dataResult-header .dataItem-header {
-   width: 100%;
-   height: 30px;
-   display: flex;
-   align-items: center;
-   color: black;
-   font-size: smaller;
- }
- 
- .dataItem-header p {
-   margin-left: 10px;
- }
+  padding: 0;
+  left: 223px;
+  width: 16em;
+  max-height: 208px;
+  border: none;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 35%) 0px 31px 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 0 0 14px 14px;
+}
 
- 
- .dataResult-header  :hover {
-   background-color: #ebeeef;
- }
- 
+.dataResult-header::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  border-radius: 14px;
+  background-color: #aaa; /* or add it to the track */
+}
+.dataResult-header::-webkit-scrollbar-thumb {
+  border-radius: 14px;
+  background: #000;
+}
+
+.dataResult-header .dataItem-header {
+  width: 100%;
+  cursor: pointer;
+
+  color: black;
+  font-size: smaller;
+}
+
+.dataItem-header p {
+  margin: 0;
+  padding: 16px;
+}
+
+.dataItem-header :hover {
+  background-color: #ebeeef;
+}

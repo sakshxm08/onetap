@@ -40,7 +40,7 @@ function View() {
             <span>{postContent.createdAt}</span>
             <br />
             <br />
-            <span className="location">{postContent.location}</span>
+            <span id="location">{postContent.location}</span>
           </div>
           <div className="productDescription">
             <p className="p-bold">Product Description</p>

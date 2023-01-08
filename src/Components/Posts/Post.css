@@ -1,26 +1,36 @@
 .moreView {
-  margin: 16px 16px 24px;
+  margin: 16px 0 24px;
   padding: 16px 16px 32px;
-  background-color: #ebeeef;
-  border-radius: 4px;
+  /* background-color: #90d4d485; */
+  /* background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%); */
+  background-image: url(./bgImgBlue.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+}
+#recHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heading :first-child {
-  font-size: 24px;
-  color: #002f34;
+  font-size: 36px;
+  color: white;
 }
 
 .heading :last-child {
   font-size: 14px;
-  color: #002f34;
+  color: white;
 }
-
+.moreView .heading {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 .recommendations .cards {
   display: flex;
   flex-wrap: wrap;
@@ -32,17 +42,21 @@
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
+  margin: 30px 40px 50px;
 }
 
 .recommendations {
-  margin: 16px 16px 24px;
-  background-color: #ebeeef;
+  margin: 16px 0 24px;
+  /* background-color: #90d4d485; */
+  background-image: url(./bgImgBrown.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 1em;
 }
 
 .recommendations .heading span {
-  font-size: 24px;
-  color: #002f34;
+  font-size: 40px;
+  color: white;
 }
 .postParentDiv {
   padding: auto;
@@ -51,12 +65,12 @@
 .fresh-recomendation-cards {
   margin: 2em;
   display: flex;
-  flex: wrap;
+
   justify-content: space-evenly;
 }
 .fresh-recomendation-card {
   display: flex;
-  flex: wrap;
+  white-space: nowrap;
   justify-content: space-evenly;
   margin-bottom: 2em;
 }
@@ -66,6 +80,6 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
-.cards {
-  margin-top: 20px;
+.quick-menu-cards .card {
+  margin-right: 28px;
 }

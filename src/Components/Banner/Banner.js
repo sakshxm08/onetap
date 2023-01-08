@@ -10,34 +10,40 @@ function Banner() {
     <div className="bannerParentDiv">
       <div className="bannerChildDiv">
         <div className="menuBar">
-          <div className="categoryMenu">
-            <select
-              name="Category"
-              onChange={(e) => {
-                setCategory(e.target.value);
-              }}
-            >
-              {" "}
-              <option value="null">ALL CATEGORIES</option>
-              <option value="Auditorium">Auditorium</option>
-              <option value="Gym">Gym</option>
-              <option value="Swimming Pool">Swimming Pool</option>
-              <option value="Cafes">Cafes</option>
-              <option value="Open Grounds">Open Grounds</option>
-              <option value="Lounges">Lounges</option>
-            </select>
-          </div>
           <div className="otherQuickOptions">
-            <span onClick={() => setCategory("Auditorium")}>Auditorium</span>
-            <span onClick={() => setCategory("Gym")}>Gym</span>
-            <span onClick={() => setCategory("Swimming Pool")}>
-              Swimming Pool
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Auditorium")}
+            >
+              AUDITORIUM
             </span>
-            <span onClick={() => setCategory("Cafes")}>Cafes</span>
-            <span onClick={() => setCategory("Open Grounds")}>
-              Open Grounds
+            <span className="bannerCategory" onClick={() => setCategory("Gym")}>
+              GYM
             </span>
-            <span onClick={() => setCategory("Lounges")}>Lounges</span>
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Swimming Pool")}
+            >
+              SWIMMING POOL
+            </span>
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Cafes")}
+            >
+              CAFES
+            </span>
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Open Grounds")}
+            >
+              OPEN GROUNDS
+            </span>
+            <span
+              className="bannerCategory"
+              onClick={() => setCategory("Lounges")}
+            >
+              LOUNGES
+            </span>
           </div>
         </div>
         <div className="banner">

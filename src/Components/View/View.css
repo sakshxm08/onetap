@@ -73,9 +73,9 @@
   font-weight: bolder;
 }
 .category,
-.location {
+#location {
   font-weight: 700;
 }
-.location {
+#location {
   font-size: 18px;
 }

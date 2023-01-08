@@ -4,6 +4,8 @@ import { PostContext } from "../../contextStore/PostContext";
 import SearchIcon from "..//../assets/SearchIcon";
 import CloseIcon from "..//../assets/CloseIcon/CloseIcon";
 import { useHistory } from "react-router";
+import InputHints from "react-input-hints";
+
 import "./search.css";
 function Search() {
   const { allPost, setAllPost } = useContext(AllPostContext);
@@ -48,15 +50,24 @@ function Search() {
       history.push("/viewmore");
     }
   };
+
   return (
     <div className="search">
       <div className="searchInputs">
-        <input
+        <InputHints
           type="text"
-          placeholder="Find Auditoriums, Swimming Pools, Cafes and more..."
           value={wordEntered}
           onChange={handleFilter}
+          placeholders={[
+            "Search Auditoriums",
+            "Search Gyms",
+            "Search Swimming Pools",
+            "Search Cafes",
+            "Search Open Grounds",
+            "Search Lounges",
+          ]}
         />
+
         <div className="searchIcon">
           <div onClick={handleSearchClick}>
             {" "}

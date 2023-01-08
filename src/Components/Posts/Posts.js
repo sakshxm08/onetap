@@ -87,10 +87,10 @@ function Posts() {
         </div>
       )}
       <div className="recommendations">
-        <div className="heading">
-          <span>Fresh recommendations</span>
+        <div className="heading" id="recHeading">
+          <span>Top-Picks</span>
         </div>
-        <div className="fresh-recomendation-cards cards">
+        <div className="fresh-recomendation-cards">
           {loading2 ? <BarLoading /> : freshRecomendationCards}
         </div>
       </div>

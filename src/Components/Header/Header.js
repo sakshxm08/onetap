@@ -51,6 +51,7 @@ function Header() {
         history.push("/login");
       });
   };
+
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
@@ -95,16 +96,20 @@ function Header() {
           <Search />
         </div>
 
-        <div className="language">
+        {/* <div className="language">
           <span> ENGLISH </span>
           <Arrow></Arrow>
-        </div>
+        </div> */}
         <div className="loginPage">
+          <i
+            class="fa-solid fa-user pr-2 userIcon"
+            style={{ color: "white" }}
+          ></i>
           {user ? (
             user.displayName
           ) : (
             <Link to="/login">
-              <span>Login</span>
+              <span className="loginLink">Login/Register</span>
             </Link>
           )}
           <hr />
